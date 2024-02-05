@@ -1,3 +1,5 @@
+process.stdout.setEncoding('utf-8');
+
 let XMLHttpRequest = require('xhr2');
 
 let xhr = new XMLHttpRequest();
@@ -10,6 +12,6 @@ xhr.onload = function() {
     let countries = JSON.parse(xhr.responseText);
 
     for (let data of countries){
-        console.log(data.flags);
+        console.log(data.flag);
     }
 }
