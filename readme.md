@@ -1,7 +1,7 @@
 Day 3 Task list --
 
 1. How to compare two JSON have the same properties without order?
-        - Solved in 'file Compare two JSON.js'
+        - Solved in 'Compare two JSON.js'
 
 2. Use the rest countries' API URL and display all the country flags in the console.
         - Solved in 'Display all the country flags.js'
