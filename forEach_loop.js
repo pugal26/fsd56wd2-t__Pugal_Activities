@@ -1,4 +1,3 @@
-//Created my resume in JSON format
 let resume = {
     name: 'Pugalendhi',
     contact: 'pugalcud@gmail.com',
