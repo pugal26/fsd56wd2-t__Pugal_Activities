@@ -1,4 +1,4 @@
-// Get all the countries from Asia continent /region using Filter function
+// Get all the countries with a population of less than 2 lakhs using Filter function
 
 const { count } = require('console');
 const XHRHtmlRequest = require('xhr2');
@@ -12,11 +12,12 @@ xhr.send();
 xhr.onload = function () {
     let countries = JSON.parse(xhr.responseText);
 
-    let filteredCountries = countries.filter(country => country.region === 'Asia');
+    let filteredCountries = countries.filter(country => country.population < 200000 );
     
+    console.log(`The below list of countries are population under 2 lakhs:`);
+
     filteredCountries.forEach(country => {
-        console.log('Countries in Asia:', country.name.common);
+        console.log(country.name.common);
+
     })  
 }
-
-
