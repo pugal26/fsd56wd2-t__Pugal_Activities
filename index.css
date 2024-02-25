@@ -15,4 +15,11 @@
 
 .fristRow {
     background-color: #353535;
+    border-color: #353535;
+}
+
+.Search {
+    background-color: #353535;
+    color: white;
+    
 }
