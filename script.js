@@ -1,30 +1,30 @@
 function submitForm() {
     // Get form values
-    var firstName = document.getElementById('firstName').value;
-    var lastName = document.getElementById('lastName').value;
-    var address = document.getElementById('address').value;
-    var pincode = document.getElementById('pincode').value;
+    let firstName = document.getElementById('firstName').value;
+    let lastName = document.getElementById('lastName').value;
+    let address = document.getElementById('address').value;
+    let pincode = document.getElementById('pincode').value;
     
     // Get gender value
-    var genderRadioButtons = document.querySelectorAll('input[name="gender"]:checked');
-    var gender = genderRadioButtons.length > 0 ? genderRadioButtons[0].value : '';
+    let genderRadioButtons = document.querySelectorAll('input[name="gender"]:checked');
+    let gender = genderRadioButtons.length > 0 ? genderRadioButtons[0].value : '';
     
-    var foodCheckboxes = document.querySelectorAll('input[name="food"]:checked');
-    var foods = Array.from(foodCheckboxes).map(checkbox => checkbox.value);
-    var state = document.getElementById('state').value;
-    var country = document.getElementById('country').value;
+    let foodCheckboxes = document.querySelectorAll('input[name="food"]:checked');
+    let foods = Array.from(foodCheckboxes).map(checkbox => checkbox.value);
+    let state = document.getElementById('state').value;
+    let country = document.getElementById('country').value;
 
     // Create table row
-    var tableBody = document.getElementById('tableBody');
-    var newRow = tableBody.insertRow(tableBody.rows.length);
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-    var cell3 = newRow.insertCell(2);
-    var cell4 = newRow.insertCell(3);
-    var cell5 = newRow.insertCell(4);
-    var cell6 = newRow.insertCell(5);
-    var cell7 = newRow.insertCell(6);
-    var cell8 = newRow.insertCell(7);
+    let tableBody = document.getElementById('tableBody');
+    let newRow = tableBody.insertRow(tableBody.rows.length);
+    let cell1 = newRow.insertCell(0);
+    let cell2 = newRow.insertCell(1);
+    let cell3 = newRow.insertCell(2);
+    let cell4 = newRow.insertCell(3);
+    let cell5 = newRow.insertCell(4);
+    let cell6 = newRow.insertCell(5);
+    let cell7 = newRow.insertCell(6);
+    let cell8 = newRow.insertCell(7);
 
     // Set cell values
     cell1.innerHTML = firstName;
