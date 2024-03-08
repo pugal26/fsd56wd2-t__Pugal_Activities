@@ -1,0 +1,8 @@
+.calculator {
+    max-width: 500px;
+    margin: auto;
+  }
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,41 +1,109 @@
-function submitForm() {
-    // Get form values
-    let firstName = document.getElementById('firstName').value;
-    let lastName = document.getElementById('lastName').value;
-    let address = document.getElementById('address').value;
-    let pincode = document.getElementById('pincode').value;
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.createElement('div');
+    container.classList.add('container', 'mt-5');
+  
+    const title = document.createElement('h1');
+    title.id = 'title';
+    title.textContent = 'Calculator';
+    title.classList.add('title','d-flex', 'justify-content-center','align-item-center','link-info','display-2')
+  
+    const description = document.createElement('p');
+    description.id = 'description';
+    description.textContent = 'Created a calculator using DOM with keyboard events for numbers. This will handle addition, subtraction, multiplication, division, and modulus.';
+    description.classList.add('description','d-flex', 'justify-content-center','align-item-center','mb-5', 'container-fluid','link-body-emphasis')
+
+  
+    container.appendChild(title);
+    container.appendChild(description);
+
+    const calculator = document.createElement('div');
+    calculator.classList.add('calculator');
+  
+    const display = document.createElement('input');
+    display.type = 'text';
+    display.id = 'result';
+    display.classList.add('form-control', 'mb-4', 'p-5','fs-5');
+    display.readOnly = true;
+  
+    calculator.appendChild(display);
+  
+    const buttons = [
+      ['7', '8', '9', '+'],
+      ['4', '5', '6', '-'],
+      ['1', '2', '3',, '*'],
+      ['C', '0', '=', '/']
+    ];
     
-    // Get gender value
-    let genderRadioButtons = document.querySelectorAll('input[name="gender"]:checked');
-    let gender = genderRadioButtons.length > 0 ? genderRadioButtons[0].value : '';
-    
-    let foodCheckboxes = document.querySelectorAll('input[name="food"]:checked');
-    let foods = Array.from(foodCheckboxes).map(checkbox => checkbox.value);
-    let state = document.getElementById('state').value;
-    let country = document.getElementById('country').value;
+    buttons.forEach(row => {
+      const rowElement = document.createElement('div');
+      rowElement.classList.add('row','m-2','p-2');
+      
+  
+      row.forEach(value => {
+        const button = document.createElement('button');
+        button.classList.add('btn', value === '=' ? 'btn-success' : value === 'C' ? 'btn-warning' : 'btn-secondary', 'col', 'mx-2', 'p-4','fw-bolder');
+        button.textContent = value;
+        button.addEventListener('click', function () {
+          handleButtonClick(value);
+        });
+  
+        rowElement.appendChild(button);
+      });
+  
+      calculator.appendChild(rowElement);
+    });
+  
+    container.appendChild(calculator);
+    document.body.appendChild(container);
+  
 
-    // Create table row
-    let tableBody = document.getElementById('tableBody');
-    let newRow = tableBody.insertRow(tableBody.rows.length);
-    let cell1 = newRow.insertCell(0);
-    let cell2 = newRow.insertCell(1);
-    let cell3 = newRow.insertCell(2);
-    let cell4 = newRow.insertCell(3);
-    let cell5 = newRow.insertCell(4);
-    let cell6 = newRow.insertCell(5);
-    let cell7 = newRow.insertCell(6);
-    let cell8 = newRow.insertCell(7);
 
-    // Set cell values
-    cell1.innerHTML = firstName;
-    cell2.innerHTML = lastName;
-    cell3.innerHTML = address;
-    cell4.innerHTML = pincode;
-    cell5.innerHTML = gender;
-    cell6.innerHTML = foods.join(', ');
-    cell7.innerHTML = state;
-    cell8.innerHTML = country;
-
-    // Clear form fields
-    document.getElementById('myForm').reset();
-}
+    let displayValue = '';
+  
+    function handleButtonClick(value) {
+      if (/[0-9]/.test(value)) {
+        appendNumber(value);
+      } else if (['+', '-', '*', '/'].includes(value)) {
+        setOperation(value);
+      } else if (value === '=') {
+        calculate();
+      } else if (value === 'C') {
+        clearDisplay();
+      }
+    }
+  
+    function appendNumber(number) {
+      displayValue += number;
+      updateDisplay();
+    }
+  
+    function setOperation(operator) {
+      displayValue += ` ${operator} `;
+      updateDisplay();
+    }
+  
+    function clearDisplay() {
+      displayValue = '';
+      updateDisplay();
+    }
+  
+    function calculate() {
+      try {
+        displayValue = eval(displayValue);
+        updateDisplay();
+      } catch (error) {
+        alert('Invalid expression');
+        clearDisplay();
+      }
+    }
+  
+    function updateDisplay() {
+      display.value = displayValue;
+    }
+  
+    // Add event listeners for keyboard input
+    document.addEventListener('keydown', function (event) {
+      const key = event.key;
+      handleButtonClick(key);
+    });
+});
