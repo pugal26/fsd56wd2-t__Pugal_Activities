@@ -11,6 +11,9 @@ This web application displays a countdown from 10 to 1 and reveals a "Happy Inde
 
 3. The countdown will be centered on the page. Upon reaching 1, the "Happy Independence Day" message will be revealed.
 
+Alternatively, you can visit the live demo at (https://countdownback.netlify.app/).
+
+
 ## Project Structure
 
 - `index.html`: Main HTML file with the page structure.
