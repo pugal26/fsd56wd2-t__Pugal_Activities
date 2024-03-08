@@ -1,8 +1,12 @@
 const mainContainer = document.createElement('div');
     const h1 = document.createElement('h1');
         h1.textContent = "Pagination using DOM";
+        h1.id = 'title';
 
-mainContainer.appendChild(h1);
+const description = document.createElement('p');
+    description.textContent = 'Designed a Pagination in DOM manipulation with CSS'
+    description.id = 'description'
+mainContainer.append(h1,description);
 
 
 const tableContainer = document.createElement('div');

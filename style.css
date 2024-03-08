@@ -1,7 +1,16 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+
+#title, #description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+
+}
+
 body {
     height: auto;
     display: flex;
@@ -9,6 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 5%;
 }
 
 .paginationRow {
