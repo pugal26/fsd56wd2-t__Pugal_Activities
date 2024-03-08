@@ -9,3 +9,4 @@ This project demonstrates a simple implementation of pagination using DOM manipu
 - Basic styling using CSS.
 
 ## Usage
+- View the live demo: [Pagination Demo](https://dompage0.netlify.app/)
