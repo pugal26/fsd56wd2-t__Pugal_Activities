@@ -1,12 +1,21 @@
-# Pagination in DOM Manipulation
+# Countdown App
 
-This project demonstrates a simple implementation of pagination using DOM manipulation, HTML, and CSS. It provides a basic template for creating a paginated user interface with clickable page numbers.
-
-## Features
-
-- Dynamically generates a pagination UI based on the specified number of pages.
-- Clickable page numbers with a basic hover effect.
-- Basic styling using CSS.
+This web application displays a countdown from 10 to 1 and reveals a "Happy Independence Day" message. The project adheres to certain constraints, such as no named functions, no set interval function, no recursion, no IIFEs, no named functions, no looping, and utilizes callback hell for the timer.
 
 ## Usage
-- View the live demo: [Pagination Demo](https://dompage0.netlify.app/)
+
+1. Clone the repository:
+    git clone <repository-url>
+
+2. Open `index.html` in your web browser.
+
+3. The countdown will be centered on the page. Upon reaching 1, the "Happy Independence Day" message will be revealed.
+
+## Project Structure
+
+- `index.html`: Main HTML file with the page structure.
+- `script.js`: JavaScript file with the countdown logic using callback hell.
+- `bootstrap@5.3.0`: Bootstrap CSS and JavaScript files included via CDN.
+- Internal CSS is used for additional styling.
+
+
