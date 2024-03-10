@@ -9,12 +9,14 @@ async function loadCountries() {
 
   const mainContainer = document.createElement('div');
   mainContainer.classList.add('container-fluid')
+  let h1 = document.createElement('h1');
+  h1.textContent = 'Check Weather for the Rest Countries'
   const row = document.createElement('div');
   row.classList.add('row');
   row.setAttribute('id','countries');
 
-
-  mainContainer.appendChild(row);
+  
+  mainContainer.append(h1,row);
   document.body.appendChild(mainContainer);
   
   //get the countries container
