@@ -36,7 +36,7 @@ async function loadCountries() {
       cardHeader.classList.add('card-header','bg-dark');
 
       let countryName = country.name.common;
-      let capital = country.capital;
+      let capital = country.capital ? country.capital[0] : 'N/A';
       let region = country.region;
       let countryCode = country.cca2;
       let flag = country.flags.png;
