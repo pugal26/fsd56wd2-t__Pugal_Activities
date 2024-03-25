@@ -1,110 +1,40 @@
-async function getCountries() {
-  let response = await fetch('https://restcountries.com/v3.1/all')
-  let countries = await response.json();
-  return countries;
-}
+let select = document.querySelectorAll('.currency')
+let btn = document.querySelector('.btn')
+let input = document.querySelector('.input')
 
-async function loadCountries() {
-  let countries = await getCountries();
+//fetching the data...
+fetch('https://www.frankfurter.app/currencies')
+.then(response => response.json())
+.then(response => displayDropDown(response));
 
-  const mainContainer = document.createElement('div');
-  mainContainer.classList.add('container-fluid')
-  let h1 = document.createElement('h1');
-  h1.textContent = 'Check Weather for the Rest Countries'
-  const row = document.createElement('div');
-  row.classList.add('row');
-  row.setAttribute('id','countries');
+//function to push the currency into the dropdown list-
+function displayDropDown(response) {
+    // console.log(Object.entries(response)[0])
+    let curr = Object.entries(response)
+    for (let i = 0; i < curr.length; i++) {
+        let opt = `<option value = '${curr[i][0]}'>${curr[i][0]}</option>`
+        select[0].innerHTML += opt
+        select[1].innerHTML += opt
+    } 
+};
 
-  
-  mainContainer.append(h1,row);
-  document.body.appendChild(mainContainer);
-  
-  //get the countries container
-  let countriesContainer = document.getElementById('countries');
+//button activation-
+btn.addEventListener('click', () => {
+    let curr1 = select[0].value;
+    let curr2 = select[1].value;
+    let inputVal = input.value
+    if(curr1 === curr2)
+        alert('Invalid Selection of From / To Currency')
+    else 
+        convert(curr1,curr2,inputVal)
+});
 
-  countries.forEach(country => {
-      // create a div element
-      const card = document.createElement('div');
-      // classes col-lg-4 col-ms-6 col-sm-12
-      card.classList.add('col-lg-4', 'col-md-6', 'col-sm-12');
-
-      // populate the content of the card
-      const cardInner = document.createElement('div');
-      cardInner.classList.add('card','mb-3','mt-3');
-
-      const cardHeader = document.createElement('div');
-      cardHeader.classList.add('card-header','bg-dark');
-
-      let countryName = country.name.common;
-      let capital = country.capital ? country.capital[0] : 'N/A';
-      let region = country.region;
-      let countryCode = country.cca2;
-      let flag = country.flags.png;
-
-      cardHeader.textContent = countryName;
-
-      
-      const cardBody = document.createElement('div');
-      cardBody.classList.add('card-body');
-      cardBody.classList.add('d-flex','flex-column','align-items-center');
-
-      // append an image
-      const img = document.createElement('img');
-      img.src = flag;
-      img.alt = countryName;
-      img.classList.add('m-3', 'text-center');
-
-      // append a para
-      const p = document.createElement('p');
-      p.innerHTML = `Capital: ${capital}<br>
-      Region: ${region}<br>
-      Country Code: ${countryCode}`;
-      p.classList.add('text-center');
-
-      // append a button
-      const btn = document.createElement('button');
-      btn.textContent = 'Click for Weather';
-      btn.classList.add('btn','btn-primary');
-
-
-
-      const weatherInfo = document.createElement('p');
-      weatherInfo.classList.add('text-center','mt-3','d-none', 'weather-info');
-
-      btn.addEventListener('click', async (e) => {
-        toggleWeather(country,e, weatherInfo);
-    });
-
-      cardBody.append(img,p,btn,weatherInfo);
-
-      // append the card to the container
-      cardInner.append(cardHeader,cardBody);
-      card.append(cardInner);
-
-      countriesContainer.append(card);
-
-  })
-}
-
-loadCountries();
-
-async function toggleWeather(country, e, weatherInfo) {
-  let [lat,lon] = country.latlng;
-
-  weatherInfo.classList.remove('d-none');
-  e.target.classList.add('d-none');
-
-  let weather = await getWeather(lat, lon);
-
-  weatherInfo.textContent = `Weather: ${weather.weather[0].description}`;
-}
-
-async function getWeather(lat, lon) {
-  let apiKey = '973de3d7528bfa46b68ee634ae3bd45b';
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-
-  let response = await fetch(url);
-  let weather = await response.json();
-
-  return weather;
+//function to convert the currency
+function convert(curr1,curr2,inputVal) {
+    const host = 'api.frankfurter.app';
+    fetch(`https://${host}/latest?amount=${inputVal}&from=${curr1}&to=${curr2}`)
+  .then(response => response.json())
+  .then((data) => {
+    document.querySelector('.result').value = Object.values(data.rates)[0]
+  });
 }
