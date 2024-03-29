@@ -1,12 +1,17 @@
+document.getElementById('searchButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    let city = document.querySelector('input[name="city"]').value;
+});
+
 function fetchWeather(city) {
 
-    let weatherResults = document.getElementById('weatherResults')
+    let weatherResults = document.querySelector('.weatherResults')
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=973de3d7528bfa46b68ee634ae3bd45b`)
     .then(response => response.json())
     .then(weather => {
 
-        let location = document.getElementById('location');
+        let location = document.querySelector('.location');
         location.innerHTML = `Results of <strong>${weather.name}, ${weather.sys.country}</strong>`
 
         let weatherIconCol = document.createElement('div');
