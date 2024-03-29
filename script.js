@@ -9,7 +9,7 @@ function fetchWeather(city) {
 
     weatherResults.innerHTML = '';
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=973de3d7528bfa46bee634ae3bd45b`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=973de3d7528bfa46b68ee634ae3bd45b`)
     .then(response => response.json())
     .then(weather => {
 
