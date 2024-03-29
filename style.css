@@ -1,0 +1,16 @@
+img {
+    width: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow:  5px 5px 15px #686764;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    filter:  drop-shadow(0 0 0.75rem rgb(226, 223, 7));
+}
