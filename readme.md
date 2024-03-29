@@ -15,13 +15,10 @@ This project is a simple web application that fetches product data from a fake s
 - CSS (Bootstrap)
 - JavaScript
 
-## How to Use
+## Usage
 
-1. Clone the repository to your local machine:
+- Clone the repository to your local machine: [Products Sheet](https://productssheet.netlify.app/)
 
-    ```bash
-    git clone https://github.com/your-username/products-sheet.git
-    ```
 
 
 ## Acknowledgements
