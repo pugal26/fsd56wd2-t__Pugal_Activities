@@ -7,6 +7,8 @@ function fetchWeather(city) {
 
     let weatherResults = document.querySelector('.weatherResults')
 
+    weatherResults.innerHTML = '';
+
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=973de3d7528bfa46b68ee634ae3bd45b`)
     .then(response => response.json())
     .then(weather => {
