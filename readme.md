@@ -13,6 +13,7 @@
 ### The collections are in Assets folder as JSON files
 
 ```
+    https://github.com/pugal26/fsd56wd2-t__Pugal_Activities/tree/Day08/04/Assets
 ```
 
 #### For the following question write the corresponding MongoDB queries
@@ -26,5 +27,9 @@
 
 ### Queries and Output Results:
 Download the below docx file and you can the view the queries and output results for the above mentioned questions in MongoDB.
+
+```
+    https://github.com/pugal26/fsd56wd2-t__Pugal_Activities/blob/Day08/04/MongoDB%20Task%2008_04.docx
+```
 
 
