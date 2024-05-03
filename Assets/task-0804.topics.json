@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "663535605392276134d05eea"
+  },
+  "topicId": 1,
+  "topic": "Javascript",
+  "topicDate": "2020-10-10"
+},
+{
+  "_id": {
+    "$oid": "663535605392276134d05eeb"
+  },
+  "topicId": 2,
+  "topic": "Bootstrap",
+  "topicDate": "2020-10-11"
+},
+{
+  "_id": {
+    "$oid": "663535605392276134d05eec"
+  },
+  "topicId": 3,
+  "topic": "HTML",
+  "topicDate": "2020-10-17"
+},
+{
+  "_id": {
+    "$oid": "663535605392276134d05eed"
+  },
+  "topicId": 4,
+  "topic": "React",
+  "topicDate": "2020-10-24"
+},
+{
+  "_id": {
+    "$oid": "663535605392276134d05eee"
+  },
+  "topicId": 5,
+  "topic": "MongoDB",
+  "topicDate": "2020-10-31"
+},
+{
+  "_id": {
+    "$oid": "663535605392276134d05eef"
+  },
+  "topicId": 6,
+  "topic": "Node.JS",
+  "topicDate": "2020-11-01"
+}]

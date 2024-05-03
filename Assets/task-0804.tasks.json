@@ -1,0 +1,649 @@
+[{
+  "_id": {
+    "$oid": "663532f05392276134d05eab"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 1,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eac"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 2,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ead"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 3,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eae"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 4,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eaf"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 5,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb0"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 6,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb1"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 7,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb2"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 8,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb3"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 9,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb4"
+  },
+  "taskId": 1,
+  "topicId": 1,
+  "userId": 10,
+  "task": "Javascript",
+  "dueDate": "2020-10-12",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb5"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 1,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb6"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 2,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb7"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 3,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb8"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 4,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eb9"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 5,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eba"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 6,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ebb"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 7,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ebc"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 8,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ebd"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 9,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ebe"
+  },
+  "taskId": 2,
+  "topicId": 2,
+  "userId": 10,
+  "task": "Bootstrap",
+  "dueDate": "2020-10-13",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ebf"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 1,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec0"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 2,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec1"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 3,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec2"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 4,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec3"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 5,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec4"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 6,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec5"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 7,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec6"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 8,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec7"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 9,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec8"
+  },
+  "taskId": 3,
+  "topicId": 3,
+  "userId": 10,
+  "task": "HTML",
+  "dueDate": "2020-10-19",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ec9"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 2,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eca"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 3,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ecb"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 4,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ecc"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 5,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ecd"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 6,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ece"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 7,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ecf"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 8,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed0"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 9,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed1"
+  },
+  "taskId": 5,
+  "topicId": 5,
+  "userId": 10,
+  "task": "React",
+  "dueDate": "2020-10-26",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed2"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 1,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed3"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 2,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed4"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 3,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed5"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 4,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed6"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 5,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed7"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 6,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed8"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 7,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ed9"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 8,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05eda"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 9,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05edb"
+  },
+  "taskId": 8,
+  "topicId": 8,
+  "userId": 10,
+  "task": "MongoDB",
+  "dueDate": "2020-11-03",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05edc"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 1,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05edd"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 2,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ede"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 3,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05edf"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 4,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ee0"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 5,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ee1"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 6,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ee2"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 7,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ee3"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 8,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ee4"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 9,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": false
+},
+{
+  "_id": {
+    "$oid": "663532f05392276134d05ee5"
+  },
+  "taskId": 7,
+  "topicId": 7,
+  "userId": 10,
+  "task": "Node.JS",
+  "dueDate": "2020-11-02",
+  "submitted": true
+}]
